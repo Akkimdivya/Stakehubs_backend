@@ -1,0 +1,1 @@
+{"level":"error","message":"Error fetching pending orders: SQLITE_ERROR: near \"FOR\": syntax error"}
