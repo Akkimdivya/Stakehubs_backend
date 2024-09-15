@@ -1,5 +1,4 @@
 const express = require('express');
-const helmet = require('helmet');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const userRoutes = require('./routes/users');
@@ -11,7 +10,6 @@ require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
-app.use(helmet());
 
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000,
